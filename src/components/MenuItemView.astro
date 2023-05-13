@@ -9,3 +9,13 @@ const {title, url} = Astro.props;
 <li>
     <a href={url}> {title} </a>
 </li>
+
+
+<style>
+    li{
+        @apply list-none p-0 m-0;
+        a {
+            @apply hover:text-orange-500 hover:scale-150 text-xl py-8 px-10 text-white no-underline transition-all duration-300 ease-in-out flex items-center;
+        }
+    }
+</style>

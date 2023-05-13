@@ -21,9 +21,7 @@ const { title } = Astro.props;
 	<body>
 
 		<MenuItemContainerView>
-			{
-				menuItems.map(item => <MenuItemView {...item} />)
-			}
+			{ menuItems.map(item => <MenuItemView {...item} />) }
 		</MenuItemContainerView>
 
 		<slot />

@@ -1,0 +1,26 @@
+<section>
+    <video autoplay loop muted playsinline>
+        <source src="/public/assets/hero.mp4" type="video/mp4">
+    </video>
+    <div class="logo">
+        <img src="/public/assets/hero-logo.webp" alt="">
+    </div>
+</section>
+
+
+<style>
+    section{
+        @apply h-screen bg-black;
+
+        video{
+            @apply relative w-full;
+        }
+
+        .logo{
+            @apply relative -top-[300px] xl:-top-[450px];
+            img{
+                @apply w-[400px] xl:w-[600px] mx-auto;
+            }
+        }
+    }
+</style>
